@@ -31,7 +31,9 @@ CURL_CSOURCES := \
   smb.c curl_endian.c curl_des.c \
   vtls/axtls.c vtls/darwinssl.c vtls/schannel.c vtls/cyassl.c \
   vtls/gskit.c vtls/gtls.c vtls/nss.c vtls/openssl.c vtls/polarssl.c \
-  vtls/polarssl_threadlock.c vtls/vtls.c
+  vtls/polarssl_threadlock.c vtls/vtls.c \
+	vauth/cleartext.c vauth/cram.c vauth/digest_sspi.c vauth/digest.c vauth/krb5_gssapi.c vauth/krb5_sspi.c vauth/ntlm_sspi.c vauth/ntlm.c vauth/oauth2.c vauth/spnego_gssapic vauth/spnego_sspi.c vauth/vauth.c \
+
 CURL_LOCAL_SRC_FILES := $(addprefix ../../curl/lib/,$(CURL_CSOURCES))
 CURL_LOCAL_C_INCLUDES += \
   $(LOCAL_PATH)/../../curl/include \
